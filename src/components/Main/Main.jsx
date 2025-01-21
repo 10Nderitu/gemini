@@ -26,10 +26,10 @@ const Main = () => {
           <div className="card">
             <p>Come up with team building activities for our work retreat</p>
             <img src={assets.comment} alt="" />
-            <div className="card">
+          </div>
+          <div className="card">
             <p>Debug the following code</p>
             <img src={assets.code} alt="" />
-          </div>
           </div>
         </div>
       </div>

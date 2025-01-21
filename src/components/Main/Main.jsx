@@ -38,7 +38,7 @@ const Main = () => {
 
         <div className="main-bottom">
           <div className="search-box">
-            <input type="text" placeholder="Enter a prompt here" />
+            <input type="text" placeholder="Ask Gemini" />
             <img src={assets.gallery} alt="" />
             <img src={assets.mic} alt="" />
             <img src={assets.send} alt="" />

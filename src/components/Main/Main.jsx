@@ -60,7 +60,7 @@ const Main = () => {
             <input onChange = {(e) => setInput(e.target.value)} value = {input} type="text" placeholder="Ask Gemini" />
             <img src={assets.gallery} alt="" />
             <img src={assets.mic} alt="" />
-            <img src={assets.send} alt="" />  
+            <img onClick={()=>onSent()} src={assets.send} alt="" />  
           </div>
 
           <p className="bottom-info">

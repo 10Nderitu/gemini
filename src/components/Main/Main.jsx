@@ -33,7 +33,7 @@ const Main = () => {
 
             <div className="cards">
               <div className="card">
-                <p>Suggest a good travel location for a family trip</p>
+                <p>Suggest a good travel location for a family trip in Kenya</p>
                 <img src={assets.compass} alt="" />
               </div>
 
@@ -69,7 +69,7 @@ const Main = () => {
               ? <div className="loader">
                 <hr />
                 <hr />
-                <hr />
+                
               </div>
 
                 :<p dangerouslySetInnerHTML={{ __html: resultData }}></p>
@@ -86,7 +86,7 @@ const Main = () => {
               type="text"
               placeholder="Ask Gemini"
             />
-            
+
             <img src={assets.gallery} alt="" />
             <img src={assets.mic} alt="" />
             <img onClick={() => onSent()} src={assets.send} alt="" />

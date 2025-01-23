@@ -20,14 +20,25 @@ const SideBar = () => {
         {extended ? (
           <div className="recent">
             <p className="recent-title">Recent</p>
+
+
             {prevPrompts.map((item, index) => {
+
+              // order of recent prompts
+              //set as empty string
               return (
-                <div className="recent-entry">
-              <img src={assets.comment} alt="" />
-              <p> {item} ...</p>
-            </div>
+                 <div className="recent-entry">
+                 <img src={assets.comment} alt="" />
+                 <p> {item.slice(0, 18)} ... </p>
+               </div>
               )
             })}
+
+                <div className="recent-entry">
+              <img src={assets.comment} alt="" />
+              <p> What is React? </p>
+            </div>
+            
             
           </div>
 

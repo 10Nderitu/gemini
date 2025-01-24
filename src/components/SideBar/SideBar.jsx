@@ -7,6 +7,12 @@ const SideBar = () => {
   const [extended, setExtended] = useState(false);
   const {onSent, prevPrompts, setRecentPrompt} = useContext(Context)
 
+  const loadPrompt = async (prompt) => {
+    setRecentPrompt(prompt)
+    await onSent(prompt)
+  }
+
+
   return (
     <div className="sidebar">
 
@@ -27,7 +33,7 @@ const SideBar = () => {
               // order of recent prompts
               //set as empty string
               return (
-                 <div className="recent-entry">
+                 <div onClick = {()=>loadPrompt(item)} className="recent-entry">
                  <img src={assets.comment} alt="" />
                  <p> {item.slice(0, 18)} ... </p>
                </div>

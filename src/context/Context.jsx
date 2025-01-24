@@ -18,11 +18,19 @@ const ContextProvider = (props) => {
         }, 75 * index)  // delay duration
     }
 
+    const newChat = () => {
+      setLoading(false)
+      setShowResult(false)
+    }
+
     const onSent = async (prompt) => {
 
       setResultData("");
       setLoading(true);
       setShowResult(true);
+
+      // logic
+
       let response;
       if (prompt !== undefined) {
         response = await run(prompt);
@@ -70,7 +78,8 @@ const ContextProvider = (props) => {
         loading,
         resultData,
         input,
-        setInput
+        setInput,
+        newChat
     }
 
     return(

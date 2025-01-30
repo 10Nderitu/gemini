@@ -31,7 +31,9 @@ const SideBar = () => {
             {prevPrompts.map((item, index) => {
 
               // order of recent prompts
+              
               //set as empty string
+
               return (
                  <div onClick = {()=>loadPrompt(item)} className="recent-entry">
                  <img src={assets.comment} alt="" />

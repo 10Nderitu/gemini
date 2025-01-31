@@ -33,7 +33,7 @@ const Main = () => {
 
             <div className="cards">
               <div className="card">
-                <p>Suggest a good travel location for a family trip in Kenya</p>
+                <p>Suggest a good travel location for a family trip outside Nairobi</p>
                 <img src={assets.compass} alt="" />
               </div>
 

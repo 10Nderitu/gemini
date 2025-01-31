@@ -31,7 +31,6 @@ const SideBar = () => {
             {prevPrompts.map((item, index) => {
 
               // order of recent prompts
-              
               //set as empty string
 
               return (

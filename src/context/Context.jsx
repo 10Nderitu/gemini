@@ -30,6 +30,10 @@ const ContextProvider = (props) => {
       setShowResult(true);
 
       // logic
+      if (!prompt && !input.trim()) {
+        setLoading(false);
+        return;
+      } // exit if input is empty
 
       let response;
       if (prompt !== undefined) {
@@ -63,9 +67,9 @@ const ContextProvider = (props) => {
       {
         const nextWord = newResponseArray[i];
         delayPara(i, nextWord + " ")
+        setInput("");
       }
       setLoading(false);
-      setInput("");
     }
 
 

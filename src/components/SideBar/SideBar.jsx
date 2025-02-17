@@ -31,7 +31,7 @@ const SideBar = () => {
             {prevPrompts.map((item, index) => {
               //set as empty string
               return (
-                 <div onClick = {()=>loadPrompt(item)} className="recent-entry">
+                 <div key={index} onClick = {()=>loadPrompt(item)} className="recent-entry">
                  <img src={assets.comment} alt="" />
                  <p> {item.slice(0, 18)} ... </p>
                </div>

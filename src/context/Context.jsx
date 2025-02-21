@@ -29,11 +29,10 @@ const ContextProvider = (props) => {
       setLoading(true);
       setShowResult(true);
 
-      // logic
       if (!prompt && !input.trim()) {
         setLoading(false);
         return;
-      } // exit if input is empty
+      } 
 
       let response;
       if (prompt !== undefined) {

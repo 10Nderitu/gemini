@@ -59,7 +59,6 @@ const ContextProvider = (props) => {
           newResponse += responseArray[i];
         }
       }
-                                                               //split divides a string into an array of substrings
       let newResponse2 = newResponse.split("*").join("</br>") // join takes an array and a separator as arguments and returns a string
       let newResponseArray = newResponse2.split(" ");
       for (let i=0; i<newResponseArray.length; i++)

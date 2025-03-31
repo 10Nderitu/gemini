@@ -42,14 +42,10 @@ const ContextProvider = (props) => {
       response = await run(input);
     }
 
-    console.log(typeof response);
-    console.log (response);
-
     let responseArray = response().split("**");
     let newResponse = "";
 
     for (let i = 0; i < responseArray.length; i++) {
-
       // Check if the current word is surrounded by stars
       if (i % 2 === 1) {
         newResponse += "<b>" + responseArray[i] + "</b>"; // Wrap in <b> tags

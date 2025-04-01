@@ -46,7 +46,7 @@ const SideBar = () => {
 
             <div className="recent-entry">
               <img src={assets.comment} alt="" />
-              <p> What is ReactJS? </p>
+              <p> What is React? </p>
             </div>
           </div>
         ) : null}

@@ -46,9 +46,10 @@ const ContextProvider = (props) => {
     let newResponse = "";
 
     for (let i = 0; i < responseArray.length; i++) {
+      
       // Check if the current word is surrounded by stars
       if (i % 2 === 1) {
-        newResponse += "<b>" + responseArray[i] + "</b>"; // Wrap in <b> tags
+        newResponse += "<b>" + responseArray[i] + "</b>";
       } else {
         newResponse += responseArray[i];
       }
